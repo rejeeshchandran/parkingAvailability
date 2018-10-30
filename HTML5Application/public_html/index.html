@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="scripts/Scripts.js" type="text/javascript"></script>
+</head>
+<body>
+    <div ng-controller="myController">
+        <div>
+            device name : {{ parking.deviceName }}
+        </div>
+        <div>
+            parking status : {{ parking.parkStatus }}
+        </div>
+        <div>
+            <img ng-src="{{parking.lastSeen}}"
+                 alt="{{'car image'}}"
+                 style="height:100px; width:150px" />
+        </div>
+    </div>
+</body>
+</html>
